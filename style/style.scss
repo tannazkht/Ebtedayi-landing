@@ -1,0 +1,82 @@
+@font-face {
+    font-family: IranSans;
+    src: url(../assets/font/Iran-Sans.ttf);
+}
+
+@mixin flex-manager ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: IranSans;
+    .header {
+        @include flex-manager(column, center ,center);
+        .title {
+            @include flex-manager(row, center ,center);
+            padding: 10px;
+            img {
+                width: 120px;
+                padding: 0 10px;
+                border-left: 2px solid black;
+            }
+            p {
+                font-size: 20px;
+                padding: 0 10px;
+            }
+        }
+    }
+    .intro {
+        @include flex-manager(row, center ,center);
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background-image: url("../assets/images/backcheck2.svg");
+        background-size: 100% 100%;
+        background-repeat: repeat;
+        background-position: center;
+        // background-attachment: fixed;
+        background-color: rgb(255, 175, 32);
+        padding: 80px;
+        img {
+            width: 280px;
+        }
+    }
+    .about-classino {
+        @include flex-manager(row, center ,center);
+        background-color: rgb(217, 107, 217);
+        div {
+            width: 500px;
+            padding: 30px;
+            img {
+                width: 350px;
+                margin-right: 20%;
+            }
+            p {
+                width: 100%;
+                text-align: justify;
+                span {
+                    display: block;
+                    font-size: 30px;
+                    font-weight: bold;
+                    padding: 14px 0;
+                }
+            }   
+        }
+    }
+    .why-classino {
+        background-color: rgb(255, 175, 32);
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}

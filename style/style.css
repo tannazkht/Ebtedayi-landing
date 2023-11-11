@@ -1,0 +1,87 @@
+@font-face {
+  font-family: IranSans;
+  src: url(../assets/font/Iran-Sans.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: IranSans;
+}
+body .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .header .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body .header .title img {
+  width: 120px;
+  padding: 0 10px;
+  border-left: 2px solid black;
+}
+body .header .title p {
+  font-size: 20px;
+  padding: 0 10px;
+}
+body .intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-image: url("../assets/images/backcheck2.svg");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  background-position: center;
+  background-color: rgb(255, 175, 32);
+  padding: 80px;
+}
+body .intro img {
+  width: 280px;
+}
+body .about-classino {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 107, 217);
+}
+body .about-classino div {
+  width: 500px;
+  padding: 30px;
+}
+body .about-classino div img {
+  width: 350px;
+  margin-right: 20%;
+}
+body .about-classino div p {
+  width: 100%;
+  text-align: justify;
+}
+body .about-classino div p span {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 14px 0;
+}
+body .why-classino {
+  background-color: rgb(255, 175, 32);
+}
+body .why-classino h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
