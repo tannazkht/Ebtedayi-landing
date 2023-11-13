@@ -77,11 +77,78 @@ body .about-classino div p span {
   padding: 14px 0;
 }
 body .why-classino {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/backcheck2.svg");
+  background-size: cover;
   background-color: rgb(255, 175, 32);
+  border-top: 2px solid black;
 }
 body .why-classino h1 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   padding: 20px;
+}
+body .why-classino .reason-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #ffffff;
+  border: 2px solid #7100A6;
+  border-radius: 30px;
+  padding: 50px;
+}
+body .why-classino .reason-1 img {
+  width: 30px;
+  position: relative;
+}
+body .why-classino .reason-1 .right-star {
+  bottom: 100px;
+  left: 65px;
+}
+body .why-classino .reason-1 .left-star {
+  top: 100px;
+  right: 65px;
+}
+body .why-classino .reason-1 div {
+  width: 300px;
+}
+body .why-classino .reason-1 div img {
+  width: 250px;
+}
+body .why-classino .reason-1 div p {
+  width: 90%;
+  font-size: 23px;
+}
+body .why-classino .other-reasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+body .why-classino .other-reasons div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 300px;
+  background-color: #ffffff;
+  border: 2px solid #7100A6;
+  border-radius: 30px;
+  margin: 10px;
+}
+body .why-classino .other-reasons div img {
+  width: 60px;
+  margin: 10px;
+}
+body .why-classino .other-reasons div p {
+  padding: 10px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

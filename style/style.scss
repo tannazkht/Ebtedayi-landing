@@ -71,12 +71,67 @@ body {
         }
     }
     .why-classino {
+        @include flex-manager(column, center ,center);
+        background-image: url("../assets/images/backcheck2.svg");
+        background-size: cover;
         background-color: rgb(255, 175, 32);
+        border-top: 2px solid black;
         h1 {
             font-size: 30px;
             font-weight: bold;
             text-align: center;
             padding: 20px;
+        }
+        .reason-1 {
+            @include flex-manager(row, center ,center);
+            width: 60%;
+            background-color: #ffffff;
+            border: 2px solid #7100A6;
+            border-radius: 30px;
+            padding: 50px;
+            img {
+                width: 30px;
+                position: relative;
+            }
+            .right-star {
+                bottom: 100px;
+                left: 65px;
+            }
+            .left-star {
+                top: 100px;
+                right: 65px;
+            }
+            div {
+                width: 300px;
+                img {
+                    width: 250px;
+                }
+                p {
+                    width: 90%;
+                    font-size: 23px;
+                }
+            }
+        }
+        .other-reasons {
+            @include flex-manager(row, center ,center);
+            width: 500px;
+            div {
+                @include flex-manager(column, center ,center);
+                width: 60%;
+                height: 300px;
+                background-color: #ffffff;
+                border: 2px solid #7100A6;
+                border-radius: 30px;
+                margin: 10px;
+                img {
+                    width: 60px;
+                    margin: 10px;
+                }
+                p {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
         }
     }
 }
