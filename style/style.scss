@@ -196,14 +196,75 @@ body {
                     margin: 10px 0 0 0;
                 }
                 p {
-                    width: 60%;
+                    width: 55%;
                     text-align: justify;
                     span {
-                        font-size: 25px;
-                        padding: 0 0 14px 0;
+                        font-size: 20px;
+                        // padding: 0 0 14px 0;
                     }
                 }   
             }
+        }
+        .why-classino {
+            h1 {
+                font-size: 20px;
+            }
+            .reason-1 {
+                @include flex-manager(column, center ,center);
+                width: 72%;
+                padding: 20px;
+                img {
+                    width: 20px;
+                }
+                .right-star {
+                    bottom: 30px;
+                    left: 85px;
+                }
+                .left-star {
+                    top: 30px;
+                    right: 85px;
+                }
+                div {
+                    @include flex-manager(column, center , center);
+                    width: 250px;
+                    img {
+                        width: 170px;
+                    }
+                    p {
+                        width: 70%;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .other-reasons {
+            @include flex-manager(column, center, center);
+
+                .reasons {
+                    @include flex-manager(column, center, center);
+
+                    width: 50%;
+                    height: 300px;
+                    background-color: #ffffff;
+                    border: 2px solid #7100A6;
+                    border-radius: 30px;
+                    margin: 10px;
+                    img {
+                        width: 60px;
+                        margin: 10px;
+                    }
+                    p {
+                        padding: 10px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                .reason-2 {
+                    @include flex-manager(column, center, center);
+
+                }
+            
         }
     }
 }
